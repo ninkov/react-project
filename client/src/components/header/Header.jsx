@@ -1,5 +1,13 @@
-export default function Header(){
- return (
-    <h1>HEADER</h1>
-         );
+import Carousel from "./carousel/Carousel";
+import Navbar from "./navbar/Navbar";
+import TopBar from "./top-bar/TopBar";
+
+export default function Header() {
+  return (
+    <>
+      <TopBar />
+      <Navbar />
+      <Carousel/>
+    </>
+  );
 }

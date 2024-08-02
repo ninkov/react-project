@@ -1,17 +1,11 @@
-import Header from "./components/header/Header"
-import Navbar from "./components/header/navbar/Navbar"
-
-
+import Header from "./components/header/Header";
 
 function App() {
- 
   return (
     <>
-      <Header/>
-      <Navbar/>
-
+      <Header />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
