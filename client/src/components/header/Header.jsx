@@ -1,4 +1,4 @@
-import Carousel from "./carousel/Carousel";
+
 import Navbar from "./navbar/Navbar";
 import TopBar from "./top-bar/TopBar";
 
@@ -7,7 +7,7 @@ export default function Header() {
     <>
       <TopBar />
       <Navbar />
-      <Carousel/>
+     
     </>
   );
 }
