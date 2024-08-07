@@ -1,3 +1,14 @@
+const navigation = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Service", href: "/service" },
+  { name: "Price", href: "/price" },
+  { name: "Booking", href: "/booking" },
+  { name: "Contact", href: "/contact" },
+  { name: "Login", href: "/login" },
+  { name: "Register", href: "/register" },
+];
+
 export default function Navbar() {
   return (
     <div className="container-fluid p-0">
@@ -20,26 +31,17 @@ export default function Navbar() {
           id="navbarCollapse"
         >
           <div className="navbar-nav mr-auto py-0">
-            <a href="index.html" className="nav-item nav-link active">
-              Home
-            </a>
-            <a href="about.html" className="nav-item nav-link">
-              About
-            </a>
-            <a href="service.html" className="nav-item nav-link">
-              Service
-            </a>
-            <a href="price.html" className="nav-item nav-link">
-              Price
-            </a>
-            <a href="booking.html" className="nav-item nav-link">
-              Booking
-            </a>
-            <a href="contact.html" className="nav-item nav-link">
-              Contact
-            </a>
+            {navigation.map((item) => (
+              <a 
+                key={item.name}
+                href={item.href} 
+                className="nav-item nav-link"
+              >
+                {item.name}
+              </a>
+            ))}
           </div>
-          <a href="" className="btn btn-lg btn-primary px-3 d-none d-lg-block">
+          <a href="#" className="btn btn-lg btn-primary px-3 d-none d-lg-block">
             Get Quote
           </a>
         </div>
