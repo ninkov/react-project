@@ -1,7 +1,6 @@
 export default function Booking(){
  return (
     <div className="container-fluid bg-light">
-        <h2>Booking</h2>
     <div className="container">
         <div className="row align-items-center">
             <div className="col-lg-5">

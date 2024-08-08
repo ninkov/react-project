@@ -11,12 +11,6 @@ export default function Footer() {
               Pet grooming is a vital part of pet care that involves maintaining
               and improving a pet's appearance and health through services like
               bathing, cutting, brushing, nail trimming, and ear cleaning.
-              Professional groomers, who are trained in animal behavior,
-              anatomy, and physiology, use specialized tools and techniques to
-              cater to each pet's unique needs, promoting overall well-being and
-              early detection of potential health issues. In addition to basic
-              grooming, some professionals offer spa treatments and aesthetic
-              services to enhance pets' appearances and boost their confidence.
               Regular grooming appointments contribute to happier, healthier,
               and more comfortable pets, making it an essential aspect of
               responsible pet ownership.

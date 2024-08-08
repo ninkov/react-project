@@ -1,13 +1,15 @@
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Service", href: "/service" },
-  { name: "Price", href: "/price" },
-  { name: "Booking", href: "/booking" },
-  { name: "Contact", href: "/contact" },
-  { name: "Login", href: "/login" },
-  { name: "Register", href: "/register" },
+  { name: "Home", to: "/" },
+  { name: "About", to: "/about" },
+  { name: "Service", to: "/service" },
+  { name: "Price", to: "/price" },
+  { name: "Booking", to: "/booking" },
+//   { name: "Contact", to: "/contact" },
+  { name: "Login", to: "/login" },
+  { name: "Register", to: "/register" },
 ];
+
+import{Link} from 'react-router-dom'
 
 export default function Navbar() {
   return (
@@ -32,13 +34,13 @@ export default function Navbar() {
         >
           <div className="navbar-nav mr-auto py-0">
             {navigation.map((item) => (
-              <a 
+              <Link 
                 key={item.name}
-                href={item.href} 
+                to={item.to} 
                 className="nav-item nav-link"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <a href="#" className="btn btn-lg btn-primary px-3 d-none d-lg-block">

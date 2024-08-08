@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Carousel from "./components/header/carousel/Carousel";
 
 import { Routes, Route } from "react-router-dom";
+import NotFound from "./components/notFound/NotFound";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Carousel />} />
         <Route path="/booking" element={<Booking />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
       <Footer />
     </>
