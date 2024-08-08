@@ -1,10 +1,9 @@
 const navigation = [
   { name: "Home", to: "/" },
   { name: "About", to: "/about" },
-  { name: "Service", to: "/service" },
+  { name: "Gallery", to: "/gallery" },
   { name: "Price", to: "/price" },
   { name: "Booking", to: "/booking" },
-//   { name: "Contact", to: "/contact" },
   { name: "Login", to: "/login" },
   { name: "Register", to: "/register" },
 ];
@@ -43,10 +42,8 @@ export default function Navbar() {
               </Link>
             ))}
           </div>
-          <a href="#" className="btn btn-lg btn-primary px-3 d-none d-lg-block">
-            Get Quote
-          </a>
         </div>
+        
       </nav>
     </div>
   );

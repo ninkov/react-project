@@ -9,7 +9,7 @@ export default function Footer() {
             </h1>
             <p className="m-0">
               Pet grooming is a vital part of pet care that involves maintaining
-              and improving a pet's appearance and health through services like
+              and improving a pets appearance and health through services like
               bathing, cutting, brushing, nail trimming, and ear cleaning.
               Regular grooming appointments contribute to happier, healthier,
               and more comfortable pets, making it an essential aspect of
@@ -80,35 +80,7 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-              <div className="col-md-4 mb-5">
-                <h5 className="text-primary mb-4">Newsletter</h5>
-                <form action="">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control border-0"
-                      placeholder="Your Name"
-                      required="required"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      className="form-control border-0"
-                      placeholder="Your Email"
-                      required="required"
-                    />
-                  </div>
-                  <div>
-                    <button
-                      className="btn btn-lg btn-primary btn-block border-0"
-                      type="submit"
-                    >
-                      Submit Now
-                    </button>
-                  </div>
-                </form>
-              </div>
+            
             </div>
           </div>
         </div>
@@ -118,22 +90,16 @@ export default function Footer() {
         style={{background: "#111111"}}
       >
         <div className="row">
-          <div className="col-md-6 text-center text-md-left mb-3 mb-md-0">
+          <div className="col-md text-center text-md-left mb-3 mb-md-0">
             <p className="m-0 text-white">
               &copy;{" "}
               <a className="text-white font-weight-bold" href="#">
-                Your Site Name
+                Groomin 
               </a>
-              . All Rights Reserved. Designed by
-              <a
-                className="text-white font-weight-bold"
-                href="https://htmlcodex.com"
-              >
-                HTML Codex
-              </a>
+              . All Rights Reserved. Designed 
             </p>
           </div>
-          <div className="col-md-6 text-center text-md-right">
+          {/* <div className="col-md-6 text-center text-md-right">
             <ul className="nav d-inline-flex">
               <li className="nav-item">
                 <a className="nav-link text-white py-0" href="#">
@@ -156,7 +122,7 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
