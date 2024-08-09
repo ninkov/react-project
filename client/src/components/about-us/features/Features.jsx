@@ -12,9 +12,11 @@ export default function Features() {
               <span className="text-primary">Special Care</span> On Pets
             </h1>
             <p className="mb-4">
-              Dolor lorem lorem ipsum sit et ipsum. Sadip sea amet diam sed ut
-              vero no sit. Et elitr stet sed sit sed kasd. Erat duo eos et erat
-              sed diam duo
+              Our team consists of highly trained and experienced pet groomers
+              who love animals and strive to provide exceptional service. Each
+              member brings their unique skills and expertise to our grooming
+              salon, ensuring that we can cater to the diverse needs of all
+              types of pets.
             </p>
             <div className="row py-2">
               <div className="col-6">

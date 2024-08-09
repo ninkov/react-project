@@ -8,20 +8,56 @@ export default function AboutUs() {
         <div className="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
           <h4 className="text-secondary mb-3">About Us</h4>
           <h1 className="display-4 mb-4">
-            <span className="text-primary">Boarding</span> &{" "}
-            <span className="text-secondary">Daycare</span>
+            <span className="text-primary">Pet</span> &{" "}
+            <span className="text-secondary">Grooming</span>
           </h1>
-          <h5 className="text-muted mb-3">
-            Pet boarding and daycare services provide temporary care for pets
-            while their owners are away on vacation, business trips, or other
-            engagements. These facilities offer a safe, supervised environment
-            where pets can socialize, exercise, and receive individual
-            attention.
-          </h5>
+          <h5 className="text-muted mb-3">Introduction:</h5>
           <p className="mb-4">
-            Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore
-            sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor
-            sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo
+            Our dedicated team of pet groomers is committed to providing the
+            highest quality care and services for your beloved pets. We
+            understand that your furry friends are more than just pets; they're
+            family members who deserve the best possible treatment. Our
+            experienced professionals will ensure that your pet receives a
+            comfortable, stress-free, and enjoyable grooming experience.
+          </p>
+          <h5 className="text-muted mb-3">Services Offered:</h5>
+          <p className="mb-4">
+            <ul>
+              <li>
+                {" "}
+                Bathing and Shampooing: We use high-quality shampoos and
+                conditioners to cleanse your pet's coat, removing dirt, grime,
+                and excess oils. This helps maintain a healthy skin and coat.
+              </li>
+              <li>
+                {" "}
+                Haircutting and Trimming: Our skilled groomers will give your
+                pet a stylish haircut or trim, ensuring that their coat remains
+                manageable and easy to maintain at home.
+              </li>
+              <li>
+                Nail Trimming: Long nails can cause discomfort and even injury
+                to your pet. Our team will carefully trim your pet's nails to
+                prevent any issues.
+              </li>
+              <li>
+                Ear Cleaning: Regular ear cleaning is essential for maintaining
+                your pet's overall health. Our groomers will clean and inspect
+                your pet's ears to ensure there are no signs of infection or
+                parasites.
+              </li>
+              <li>
+                Anal Gland Expression: Some pets require this service to prevent
+                discomfort and potential health problems. Our team has the
+                necessary skills and experience to express anal glands safely
+                and efficiently.
+              </li>
+              <li>
+                Teeth Cleaning: Good dental hygiene is crucial for your pet's
+                overall well-being. We offer teeth cleaning services using
+                specialized equipment and products to remove plaque and tartar.
+              </li>
+            </ul>
           </p>
           <ul className="list-inline">
             <li>
@@ -43,9 +79,7 @@ export default function AboutUs() {
               </h5>
             </li>
           </ul>
-          <a href="" className="btn btn-lg btn-primary mt-3 px-4">
-            Learn More
-          </a>
+         
         </div>
         <div className="col-lg-5">
           <div className="row px-3">
