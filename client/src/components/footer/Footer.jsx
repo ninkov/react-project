@@ -1,3 +1,12 @@
+import { Link } from "react-router-dom";
+
+const navigation = [
+  { name: "Home", to: "/" },
+  { name: "About", to: "/about" },
+  { name: "AllClient", to: "/clients" },
+  { name: "Price", to: "/price" },
+  { name: "Booking", to: "/booking" },
+];
 export default function Footer() {
   return (
     <>
@@ -21,7 +30,8 @@ export default function Footer() {
               <div className="col-md-4 mb-5">
                 <h5 className="text-primary mb-4">Get In Touch</h5>
                 <p>
-                  <i className="fa fa-map-marker-alt mr-2"></i>123 Street, Burgas, Bulgaria
+                  <i className="fa fa-map-marker-alt mr-2"></i>123 Street,
+                  Burgas, Bulgaria
                 </p>
                 <p>
                   <i className="fa fa-phone-alt mr-2"></i>+012 345 67890
@@ -32,28 +42,28 @@ export default function Footer() {
                 <div className="d-flex justify-content-start mt-4">
                   <a
                     className="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-                    style={{width: "36px", height: "36px"}}
+                    style={{ width: "36px", height: "36px" }}
                     href="#"
                   >
                     <i className="fab fa-twitter"></i>
                   </a>
                   <a
                     className="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-                    style={{width: "36px", height: "36px"}}
+                    style={{ width: "36px", height: "36px" }}
                     href="#"
                   >
                     <i className="fab fa-facebook-f"></i>
                   </a>
                   <a
                     className="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-                    style={{width: "36px", height: "36px"}}
+                    style={{ width: "36px", height: "36px" }}
                     href="#"
                   >
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                   <a
                     className="btn btn-outline-light rounded-circle text-center mr-2 px-0"
-                    style={{width: "36px", height: "36px"}}
+                    style={{ width: "36px", height: "36px" }}
                     href="#"
                   >
                     <i className="fab fa-instagram"></i>
@@ -63,66 +73,35 @@ export default function Footer() {
               <div className="col-md-4 mb-5">
                 <h5 className="text-primary mb-4">Popular Links</h5>
                 <div className="d-flex flex-column justify-content-start">
-                  <a className="text-white mb-2" href="#">
-                    <i className="fa fa-angle-right mr-2"></i>Home
-                  </a>
-                  <a className="text-white mb-2" href="#">
-                    <i className="fa fa-angle-right mr-2"></i>About Us
-                  </a>
-                  <a className="text-white mb-2" href="#">
-                    <i className="fa fa-angle-right mr-2"></i>Our Services
-                  </a>
-                  <a className="text-white mb-2" href="#">
-                    <i className="fa fa-angle-right mr-2"></i>Our Team
-                  </a>
-                  <a className="text-white" href="#">
-                    <i className="fa fa-angle-right mr-2"></i>Contact Us
-                  </a>
+                  {navigation.map((item) => (
+                    <Link
+                      to={item.to}
+                      key={item.name}
+                      className="text-white mb-2 "
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
                 </div>
               </div>
-            
             </div>
           </div>
         </div>
       </div>
       <div
         className="container-fluid text-white py-4 px-sm-3 px-md-5"
-        style={{background: "#111111"}}
+        style={{ background: "#111111" }}
       >
         <div className="row">
           <div className="col-md text-center text-md-left mb-3 mb-md-0">
             <p className="m-0 text-white">
               &copy;{" "}
-              <a className="text-white font-weight-bold" href="#">
-                Groomin 
-              </a>
-              . All Rights Reserved. Designed 
+              <Link className="text-white font-weight-bold" to="/">
+                Groomin
+              </Link>
+              . All Rights Reserved. Designed
             </p>
           </div>
-          {/* <div className="col-md-6 text-center text-md-right">
-            <ul className="nav d-inline-flex">
-              <li className="nav-item">
-                <a className="nav-link text-white py-0" href="#">
-                  Privacy
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white py-0" href="#">
-                  Terms
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white py-0" href="#">
-                  FAQs
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-white py-0" href="#">
-                  Help
-                </a>
-              </li>
-            </ul>
-          </div> */}
         </div>
       </div>
     </>
