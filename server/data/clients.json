@@ -1,0 +1,38 @@
+{
+    "e4b55389-f3d4-43e5-b9c2-5ac3c800994b": {
+        "name": "Magy",
+        "breed": "French Buldog",
+        "age": "13",
+        "gender": "Fmail",
+        "size": "littel",
+        "healthStatus": "Vaccinated, dewormed, and microchipped",
+        "personality": "Playful, affectionate, and loves to explore outdoors",
+        "imageUrl": "https://scontent-sof1-1.xx.fbcdn.net/v/t1.6435-9/30714394_2097052456976228_4569744322752151552_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=2a1932&_nc_ohc=WceEy2ubHCAQ7kNvgGWXhM4&_nc_ht=scontent-sof1-1.xx&oh=00_AYAyv-Uxs-V6jMlDpAjMN1v7Rkk2ub0-oL6pxNboHCLD1Q&oe=66E0073C",
+        "summary": "Magy is a beautiful black and white domestic short-hair dog who is just waiting to find something place tio sleep! She is a playful and affectionate adult dog who loves to eat awards. Magy has already received all of hes vaccinations, been dewormed, and has even been microchipped for added security. If you're looking for a loyal and loving companion, look no further than Magy!",
+        "_id": "e4b55389-f3d4-43e5-b9c2-5ac3c800994b"
+    },
+    "4e9a05a4-4d70-4e6f-9161-24ed75e73a6f": {
+        "name": "Didi",
+        "breed": "No Breed",
+        "age": "1.5",
+        "gender": "Fmail",
+        "size": "littel",
+        "healthStatus": "Vaccinated, dewormed, and microchipped",
+        "personality": "Playful, affectionate, and loves to explore outdoors",
+        "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/chihuahua-dog-running-across-grass-royalty-free-image-1580743445.jpg?crop=0.66658xw:1xh;center,top&resize=980:*",
+        "summary": "Didi is a beautiful black and white domestic short-hair dog who is just waiting to find something place tio sleep! She is a playful and affectionate adult dog who loves to eat awards. Didi has already received all of hes vaccinations, been dewormed, and has even been microchipped for added security. If you're looking for a loyal and loving companion, look no further than Didi!",
+        "_id": "4e9a05a4-4d70-4e6f-9161-24ed75e73a6f"
+    },
+    "2f887d32-0a89-4320-931b-6d0c27e37488": {
+        "name": "Whiskers",
+        "breed": "Domestic Short-Hair",
+        "age": "2",
+        "gender": "Male",
+        "size": "Medium",
+        "healthStatus": "Vaccinated, dewormed, and microchipped",
+        "personality": "Playful, affectionate, and loves to explore outdoors",
+        "imageUrl": "https://i.natgeofe.com/n/9135ca87-0115-4a22-8caf-d1bdef97a814/75552.jpg?w=1280&h=853",
+        "summary": "Whiskers is a beautiful black and white domestic short-hair cat who is just waiting to find his forever home! He is a playful and affectionate young cat who loves to explore the great outdoors. Whiskers has already received all of his vaccinations, been dewormed, and has even been microchipped for added security. If you're looking for a loyal and loving companion, look no further than Whiskers!",
+        "_id": "2f887d32-0a89-4320-931b-6d0c27e37488"
+    }
+}
