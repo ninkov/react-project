@@ -21,16 +21,16 @@ export default function AboutUs() {
             comfortable, stress-free, and enjoyable grooming experience.
           </p>
           <h5 className="text-muted mb-3">Services Offered:</h5>
-          <p className="mb-4">
+          <div className="mb-4">
             <ul>
               <li>
-                {" "}
+              {' '}
                 Bathing and Shampooing: We use high-quality shampoos and
                 conditioners to cleanse your pet's coat, removing dirt, grime,
                 and excess oils. This helps maintain a healthy skin and coat.
               </li>
               <li>
-                {" "}
+              {' '}
                 Haircutting and Trimming: Our skilled groomers will give your
                 pet a stylish haircut or trim, ensuring that their coat remains
                 manageable and easy to maintain at home.
@@ -58,7 +58,7 @@ export default function AboutUs() {
                 specialized equipment and products to remove plaque and tartar.
               </li>
             </ul>
-          </p>
+          </div>
           <ul className="list-inline">
             <li>
               <h5>
