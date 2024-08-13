@@ -8,10 +8,10 @@ export default function AllClient() {
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
-    (async()=>{
-    const result = await clientAPI.getAll()
-    setClients(result)
-    })()
+    (async () => {
+      const result = await clientAPI.getAll();
+      setClients(result);
+    })();
   }, []);
   return (
     <div className="container-fluid bg-light pt-5">
@@ -24,10 +24,11 @@ export default function AllClient() {
           </h1>
         </div>
         <div className="row pb-3">
-          {clients.length>0?
-          clients.map((client) => ( <ClientItem key={client._id} {...client} />))
-        :<h2>No clients yet</h2>
-        }
+          {clients.length > 0 ? (
+            clients.map((client) => <ClientItem key={client._id} {...client} />)
+          ) : (
+            <h2>No clients yet</h2>
+          )}
         </div>
       </div>
     </div>

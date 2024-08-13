@@ -95,11 +95,7 @@ export default function Footer() {
         <div className="row">
           <div className="col-md text-center text-md-left mb-3 mb-md-0">
             <p className="m-0 text-white">
-              &copy;{" "}
-              <Link className="text-white font-weight-bold" to="/">
-                Groomin
-              </Link>
-              . All Rights Reserved. Designed
+              &copy; 2024 All Rights Reserved.
             </p>
           </div>
         </div>

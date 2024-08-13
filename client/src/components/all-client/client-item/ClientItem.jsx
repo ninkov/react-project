@@ -17,8 +17,8 @@ export default function ClientItem({
         <h6>{healthStatus}</h6>
 
         <Link
-          className="btn btn-lg btn-primary px-3 d-none d-lg-block"
           to={`/clients/${_id}/details`}
+          className="btn btn-lg btn-primary px-3 d-none d-lg-block"
         >
           Details
         </Link>

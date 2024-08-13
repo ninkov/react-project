@@ -221,10 +221,7 @@ img {
  
 
 }
-.col-md-6.col-lg-4.mb-4 img:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s ease-out;
-}
+
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -6862,7 +6859,10 @@ button.bg-dark:focus {
   background-color: #fff !important;
 border-radius: 5%;
 }
-
+.bg-white:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-out;
+}
 .bg-transparent {
   background-color: transparent !important;
 }
