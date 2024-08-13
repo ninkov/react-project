@@ -1,9 +1,10 @@
 const navigation = [
   { name: "Home", to: "/" },
   { name: "About", to: "/about" },
-  { name: "Gallery", to: "/gallery" },
+  { name: "AllClient", to: "/clients" },
   { name: "Price", to: "/price" },
   { name: "Booking", to: "/booking" },
+  { name: "Logout", to: "/logout" },
   { name: "Login", to: "/login" },
   { name: "Register", to: "/register" },
 ];
@@ -14,9 +15,9 @@ export default function Navbar() {
   return (
     <div className="container-fluid p-0">
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
-        <a href="" className="navbar-brand d-block d-lg-none">
+        <a href="#" className="navbar-brand d-block d-lg-none">
           <h1 className="m-0 display-5 text-capitalize font-italic text-white">
-            <span className="text-primary">Safety</span>First
+            <span className="text-primary">Groo</span>ming
           </h1>
         </a>
         <button

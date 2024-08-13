@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 export default function TopBar() {
   return (
     <div className="container-fluid">
       
       <div className="row py-3 px-lg-5">
         <div className="col-lg-4">
-          <a href="" className="navbar-brand d-none d-lg-block">
+          <Link to="/" className="navbar-brand d-none d-lg-block">
             <h1 className="m-0 display-5 text-capitalize">
               <span className="text-primary">Groo</span>ming
             </h1>
             
 
-          </a>
+          </Link>
         </div>
         <div className="col-lg-8 text-center text-lg-right">
           <div className="d-inline-flex align-items-center">
