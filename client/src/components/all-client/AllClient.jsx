@@ -1,18 +1,10 @@
-import { useEffect, useState } from "react";
-
-import * as clientAPI from "../../api/clients-api";
+import { useGetAllClients } from "../../hooks/useClients";
 
 import ClientItem from "./client-item/ClientItem";
 
 export default function AllClient() {
-  const [clients, setClients] = useState([]);
+  const [clients] = useGetAllClients();
 
-  useEffect(() => {
-    (async () => {
-      const result = await clientAPI.getAll();
-      setClients(result);
-    })();
-  }, []);
   return (
     <div className="container-fluid bg-light pt-5">
       <div className="container py-5">
