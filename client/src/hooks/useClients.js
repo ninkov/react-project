@@ -23,7 +23,7 @@ export function useGetOneClients(clientsId){
           const result = await clientsAPI.getOne(clientsId);
           setClient(result);
         })();
-      }, []);
+      }, [clientsId]);
       return [client, setClient]
 
 }
