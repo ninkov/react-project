@@ -6,9 +6,13 @@ export function useForm(initialValues, submitCallback) {
   const changeHandler = (e) => {
     setValues((state) => ({
       ...state,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value.trim(),
     }));
   };
+  // const changeHandler = (e) => {
+  //   const { name, value } = e.target;
+  //   setValues({ ...values, [name]: value.trim() });
+  // };
   const submitHandler = (e) => {
     e.preventDefault();
     submitCallback(values);
