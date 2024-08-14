@@ -3,18 +3,20 @@ import { useLogin } from "../../hooks/useAuth";
 import { useForm } from "../../hooks/useForm";
 
 import styles from "./login.module.css";
+import { useState } from "react";
 
 const initialValue = { email: "", password: "" };
 
 export default function Login() {
   const login = useLogin();
+  const [error, setError] = useState("");
   const navigate = useNavigate();
   const loginHandler = async ({ email, password }) => {
     try {
       await login(email, password);
       navigate("/");
     } catch (err) {
-      console.log(err.message);
+      setError(err.message);
     }
   };
   const { values, changeHandler, submitHandler } = useForm(
@@ -51,7 +53,19 @@ export default function Login() {
                 required="required"
               />
             </div>
-
+            {error && (
+              <p>
+                <span
+                  style={{
+                    fontSize: "16px",
+                    color: "white",
+                    textAlign: "center",
+                  }}
+                >
+                  {error}
+                </span>
+              </p>
+            )}
             <div>
               <button
                 className="btn btn-dark btn-block border-0 py-3"
