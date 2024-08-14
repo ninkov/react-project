@@ -14,3 +14,16 @@ export function useGetAllClients(){
 
     return [clients, setClients]
 }
+export function useGetOneClients(clientsId){
+
+  const [client, setClient] = useState({});
+
+    useEffect(() => {
+        (async () => {
+          const result = await clientsAPI.getOne(clientsId);
+          setClient(result);
+        })();
+      }, []);
+      return [client, setClient]
+
+}
