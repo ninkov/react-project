@@ -11,6 +11,7 @@ import NotFound from "./components/notFound/NotFound";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import ClientDetails from "./components/client-details/ClientDetails";
+import CLientCreate from "./components/client-create/ClientCreate";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/clients" element={<AllClient />} />
         <Route path="/clients/:clientsId/details" element={<ClientDetails/>}/>
+        <Route path="/create" element={<CLientCreate/>}/>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/price" element={<Pricing />} />

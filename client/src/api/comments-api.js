@@ -12,6 +12,8 @@ const getAll = async (clientId) => {
   const comments = Object.values(result);
   return comments;
 };
+
+
 export default {
   create,
   getAll,
