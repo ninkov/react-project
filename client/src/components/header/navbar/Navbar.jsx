@@ -1,17 +1,27 @@
-const navigation = [
+import { useContext } from 'react';
+import{Link} from 'react-router-dom'
+import { AuthContext } from '../../../context/AuthContext';
+
+const authNavigation = [
   { name: "Home", to: "/" },
   { name: "About", to: "/about" },
   { name: "AllClient", to: "/clients" },
-  { name: "Price", to: "/price" },
-  { name: "Booking", to: "/booking" },
+  // { name: "Price", to: "/price" },
   { name: "Logout", to: "/logout" },
+  { name: "Create", to: "/create" },
+
+];
+const notAuthNavigation = [
+  { name: "Home", to: "/" },
+  { name: "About", to: "/about" },
+  { name: "AllClient", to: "/clients" },
   { name: "Login", to: "/login" },
   { name: "Register", to: "/register" },
 ];
 
-import{Link} from 'react-router-dom'
 
 export default function Navbar() {
+  const {isAuthenticated}=useContext(AuthContext)
   return (
     <div className="container-fluid p-0">
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
@@ -32,17 +42,32 @@ export default function Navbar() {
           className="collapse navbar-collapse justify-content-between px-3"
           id="navbarCollapse"
         >
-          <div className="navbar-nav mr-auto py-0">
-            {navigation.map((item) => (
-              <Link 
-                key={item.name}
-                to={item.to} 
-                className="nav-item nav-link"
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
+
+          {!isAuthenticated ? (
+            <div className="navbar-nav mr-auto py-0">
+              {notAuthNavigation.map((item) => (
+                <Link 
+                  key={item.name}
+                  to={item.to} 
+                  className="nav-item nav-link"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="navbar-nav mr-auto py-0">
+              {authNavigation.map((item) => (
+                <Link 
+                  key={item.name}
+                  to={item.to} 
+                  className="nav-item nav-link"
+                >
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
         
       </nav>
