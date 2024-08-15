@@ -4,8 +4,8 @@ const navigation = [
   { name: "Home", to: "/" },
   { name: "About", to: "/about" },
   { name: "AllClient", to: "/clients" },
-  { name: "Price", to: "/price" },
-  { name: "Booking", to: "/booking" },
+  // { name: "Price", to: "/price" },
+
 ];
 export default function Footer() {
   return (
