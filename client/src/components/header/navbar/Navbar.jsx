@@ -6,7 +6,7 @@ const authNavigation = [
   { name: "Home", to: "/" },
   { name: "About", to: "/about" },
   { name: "AllClient", to: "/clients" },
-  // { name: "Price", to: "/price" },
+  
   { name: "Logout", to: "/logout" },
   { name: "Create", to: "/create" },
 

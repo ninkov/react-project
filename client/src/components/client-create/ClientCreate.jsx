@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useForm } from "../../hooks/useForm";
 import { useCreateClient } from "../../hooks/useClients";
+import { useState } from "react";
 
 const initialValues = {
   name: "",
@@ -14,6 +15,7 @@ const initialValues = {
   summary: "",
 };
 export default function CLientCreate() {
+    const [error,setError]= useState('')
   const navigate = useNavigate();
   const createClient = useCreateClient();
 
@@ -24,7 +26,8 @@ export default function CLientCreate() {
       navigate(`/clients/${clientsId}/details`);
     } catch (err) {
       //TODO Set error state and display error
-      console.log(err.message);
+      setError(err.message)
+      
     }
   };
 
@@ -162,7 +165,19 @@ export default function CLientCreate() {
           ></textarea>
           <span className="error"></span>
         </div>
-
+        {error && (
+              <p>
+                <span
+                  style={{
+                    fontSize: "16px",
+                    color: "white",
+                    textAlign: "center",
+                  }}
+                >
+                  {error}
+                </span>
+              </p>
+            )}
         <button type="submit">Submit</button>
       </form>
     </div>
