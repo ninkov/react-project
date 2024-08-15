@@ -1,14 +1,14 @@
-import { useContext } from 'react';
+
 import{Link} from 'react-router-dom'
-import { AuthContext } from '../../../context/AuthContext';
+import { useAuthContext } from '../../../context/AuthContext';
 
 const authNavigation = [
   { name: "Home", to: "/" },
   { name: "About", to: "/about" },
   { name: "AllClient", to: "/clients" },
+  { name: "Create", to: "/create" },
   
   { name: "Logout", to: "/logout" },
-  { name: "Create", to: "/create" },
 
 ];
 const notAuthNavigation = [
@@ -21,7 +21,7 @@ const notAuthNavigation = [
 
 
 export default function Navbar() {
-  const {isAuthenticated}=useContext(AuthContext)
+  const {isAuthenticated}=useAuthContext()
   return (
     <div className="container-fluid p-0">
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
