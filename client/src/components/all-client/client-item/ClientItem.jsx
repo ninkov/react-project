@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 export default function ClientItem({
   _id,
   name,
-  breed,
   imageUrl,
   healthStatus,
-  personality,
+
 }) {
   return (
     <div className="col-md-6 col-lg-4 mb-4">
