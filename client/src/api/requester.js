@@ -1,8 +1,10 @@
 // eslint-disable-next-line no-unused-vars
+import { getAccessToken } from '../utils/authUtils';
 async function requester(method, url, data) {
   const options = {};
 
-  const accessToken = localStorage.getItem("accessToken");
+  const accessToken = getAccessToken()
+  
   if (accessToken) {
     options.headers = { ...options.headers, "X-Authorization": accessToken };
   }

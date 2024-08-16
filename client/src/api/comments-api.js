@@ -1,20 +1,18 @@
 import requester from "./requester";
-const BASE_URL = `http://localhost:3030/jsonstore/clients`;
+const BASE_URL = `http://localhost:3030/data/comments`;
 
-const buildUrl = (clientId) => `${BASE_URL}/${clientId}/comments`;
-const create = async (clientId, username, text) => {
-  const result = await requester.post(buildUrl(clientId), { username, text });
- return result
-};
+const create = async (clientId,  text) =>
+  requester.post(BASE_URL, { clientId, text });
 
 const getAll = async (clientId) => {
-  const result = await requester.get(buildUrl(clientId));
+  const result = await requester.get(BASE_URL,(clientId));
   const comments = Object.values(result);
   return comments;
 };
 
-
-export default {
+const commentsAPI = {
   create,
   getAll,
 };
+
+export default commentsAPI;
